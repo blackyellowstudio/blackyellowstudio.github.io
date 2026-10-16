@@ -75,3 +75,22 @@ footer { color: var(--muted); font-size: 14px; padding-top: 18px; padding-bottom
   main { padding: 22px 16px 26px; }
   h1 { font-size: 26px; }
 }
+.store { display: inline-block; margin: 18px 0 6px; line-height: 0; }
+.store img { height: 54px; width: auto; }
+.store:hover { opacity: .85; }
+.price { color: var(--muted); font-size: 15px; margin: 4px 0 0; }
+.shots {
+  display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory;
+  margin: 26px -24px 4px; padding: 0 24px 10px;
+}
+.shots img {
+  height: 200px; width: auto; flex: none; border-radius: 12px; scroll-snap-align: center;
+  border: 1px solid var(--line); box-shadow: 0 3px 10px rgba(0,0,0,.12);
+}
+.features { text-align: left; max-width: 560px; margin: 18px auto 0; }
+.features li { margin: 6px 0; }
+@media (max-width: 520px) {
+  .shots { margin: 22px -16px 4px; padding: 0 16px 10px; }
+  .shots img { height: 150px; }
+  .store img { height: 48px; }
+}
